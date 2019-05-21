@@ -19,7 +19,7 @@ def sum_square_diff():
         sum_of_square += square( i );
         square_of_sum += i
     square_of_sum = square(square_of_sum)
-    diff = sum_of_square - square_of_sum
+    diff = square_of_sum - sum_of_square
     return diff
     
 
