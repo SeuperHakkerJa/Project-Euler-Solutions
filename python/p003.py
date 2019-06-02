@@ -11,7 +11,7 @@
 import math
 def find_prime_factor_of_600851475143():
     n = 600851475143
-    ## even number can not be even
+    ## even number can not be prime
     ## checking range up to sqrt of 600851475143
     i = 2   # dividor, as soon as it is no longer divisable by two, i++ 
     while ( i <= math.sqrt(n) ):
