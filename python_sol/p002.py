@@ -8,6 +8,9 @@
 # Problem: By considering the terms in the Fibonacci sequence whose values
 #          do not exceed four million, find the sum of the even-valued terms.
 #          ( starting from 1, 2, 3, 5 ... )
+from utils import timeout
+
+timeout(report_time=True)
 def find_even_fibo_under_4M():
 
     bound = 4000000
@@ -26,6 +29,8 @@ def find_even_fibo_under_4M():
         fibo_operation[1] += temp
 
     return str(sum(fibo_list))
+
+
 
 
 

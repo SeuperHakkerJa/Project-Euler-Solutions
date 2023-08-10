@@ -9,6 +9,9 @@
 #        
 
 import math
+from utils import timeout
+
+@timeout(report_time=True)
 def find_prime_factor_of_600851475143():
     n = 600851475143
     ## even number can not be prime

@@ -22,12 +22,14 @@
 2. brute force?
 3. isPalindrom
 '''
+from utils import timeout
 
 
 def isPalindrom( n ):
     return n == int(str(n)[::-1])  ## int -> slice str -> int
 
-def largest_palindrom_from_3x3():
+@timeout(report_time=True)
+def largest_palindrom():
     return max( i * j
     for i in range (999,99,-1)
     for j in range (999,99,-1) ## to include 100
@@ -36,4 +38,4 @@ def largest_palindrom_from_3x3():
 
 
 if __name__ == "__main__":
-    print( largest_palindrom_from_3x3() )
+    print( largest_palindrom() )
